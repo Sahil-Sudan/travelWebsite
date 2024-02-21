@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" class="rel">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" class="rel">
+</head>
+<body>
+   
+    <!-- header section starts -->
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">Travia.</a>
+
+            <nav class="navbar">
+                <!-- <a href="index.html">Home</a> -->
+                <a href="about.html">About</a>
+                <a href="tours.html">Tours</a>
+                <!-- <a href="destinations.html">Destination</a> -->
+                <a href="contact.html">Contact</a>
+            </nav>
+
+
+            <div id="menu-btn" class="fas fa-bars">
+
+            </div>
+        </section>
+    </header>
+    <!-- headr section ends -->
+
+
+    <!-- Contact page Start -->
+
+    <div class="container contact">
+      <h1 class="heading">contact us</h1>
+      <section>
+        <div class="row">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.795716429384!2d72.8201248550342!3d19.141649352867987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1708430833022!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <form action="mailto:sahils74089@gmail.com" method="post">
+            <h3>get in touch</h3>
+            <input
+              type="text"
+              name="name"
+              required
+              maxlength="50"
+              placeholder="enter your name"
+              class="box"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              maxlength="50"
+              placeholder="enter your email"
+              class="box"
+            />
+            <input
+              type="tel"
+              name="number"
+              required
+              maxlength="10"
+              min="0"
+              max="9999999999"
+              placeholder="enter your number"
+              class="box"
+            />
+            <textarea
+              name="message"
+              class="box boxCss"
+              required
+              maxlength="1000"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="send message" name="send" class="btn" />
+          </form>
+        </div>
+
+        <div class="grid">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <a href="tel:1234567890">+123-456-7890</a>
+                <a href="tel:1112223333">+123-456-7890</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <a href="mailto:Sahils74089@gmail.com">Sahils74089@gmail.com</a>
+                <a href="tel:1112223333">sahilbhai@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>office address</h3>
+                <a href="#">flat no. 01,a-1,jogeshwari, mumbai, india -400104</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            &copy; copyright @ 2023 by <span>Mr. Sahil Sudan</span> | all rights reserved!
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page Ends -->
+
+    
+    <!-- Footer section starts -->
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-photo">
+          <img src="images/Max.png" alt="Footer Photo">
+        </div>
+        <p class="footer-section">
+          <h4>About Us</h4>
+          <p>We pride ourselves on offering comprehensive destination insights and authentic traveler reviews, ensuring you make informed decisions for your next adventure.</p>
+        </div>
+        <div class="footer-section">
+          <h4 class="explore">Explore</h4>
+          <ul>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Book Now</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>123 Travel Street,<br>Cityville, Country</p>
+          <p>Email: info@example.com<br>Phone: +123456789</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+
+  <!-- Footer section ends -->
+
+
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+     
+</body>
+</html>
