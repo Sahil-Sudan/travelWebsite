@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color:#ff0;
+    --light-white:rgba(255,255,255,.5);
+    --light-black:rgba(0,0,0,.3);
+    --light-bg:rgba(255, 255, 255, 0.24);
+    --light-bg2:rgba(0, 56, 120, 0.717);
+    --grey:rgba(46, 46, 46, 0.1);
+    --white:#fff;
+    --black:#000;
+    --blacky:#234a88;
+    
+}
+
+*{
+    font-family:'Comfortaa', cursive;
+    margin:0;padding:0;
+    box-sizing:border-box;
+    outline:none;border:none;
+    text-decoration:none;
+    text-transform:capatilize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color:var(--black); 
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+
+body{
+    background-color: var(--black);
+}
+
+.container{
+    padding-top: 10rem;
+}
+
+/* Very important tag */
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color:var(--white);
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: block;
+    border-right: .5rem ;
+    padding: 1.2rem 3rem;
+    background: var(--main-color);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center ;
+    width: 100%;
+    font-size: 1.8rem ;
+    margin-top: 1rem;
+    transition: .2s linear;
+}
+
+.btn:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+.header{
+    position:fixed;
+    top: 0;left: 0;right: 0;
+    background: linear-gradient(0deg, transparent, var(--black));
+    backdrop-filter: blur(.4rem);
+    /* background-color: black; */
+    z-index: 1000;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex img{
+    width: 150px;
+    position: relative;
+    top:45px;
+}
+
+.flex .logo img{
+    position: relative;
+    top:-10px;
+    left: -40px;
+}
+
+.flex .logo a{
+    position: relative;
+    top:20px;
+    left: -30px;
+    /* visibility: hidden; */
+}
+
+.header .flex .logo{
+    font-size: 3.0rem;
+    color: var(--main-color);
+   
+    
+}
+
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    color: var(--light-white);
+    transition: .2s linear;
+    
+}
+
+.header .flex .navbar a:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+.home{
+    background: url(../images/bgImg.jpg) no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+}
+
+.home .flex{
+    /* margin-bottom: 100px; */
+    min-height: calc(85vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center box design krne k liye phele outer box design kro
+   inner input boxes */
+
+.home .flex form{
+    background-color: var(--light-bg2);
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 50rem;
+    backdrop-filter: blur(.4rem);   
+}
+
+.home .flex form h3{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.home .flex form p{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: var(--light-white);
+}
+
+.home .flex form .box{
+    width: 100%;
+    border-right: .5rem ;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-transform: none;
+    background: var(--light-bg);
+    margin: 1rem 0;
+}
+
+.home .flex form .box::placeholder{
+    color: var(--light-white);
+}
+
+
+/* About se just phele section-- home container in about page  */
+.container {
+    position: relative;
+}
+
+.backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    width: 60%; /* Adjust size as needed */
+    height: 40vh; /* Adjust size as needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Background color with opacity */
+    backdrop-filter: blur(.1); /* Apply backdrop filter blur */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    z-index: -1; /* Move behind other content */
+}
+
+
+
+
+.flex {
+    position: relative;
+    z-index: 1; /* Ensure content is on top of the backdrop */
+}
+
+.flex-box h3 {
+    font-size: 2.5em; /* Increase font size of h3 */
+  }
+  
+  .flex-box p {
+    margin-top: 30px;
+    font-size: 1.6em; /* Increase font size of paragraph */
+  }
+
+.flex-box {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Hme section about se phele vali */
+
+/* About Section CSS */
+
+.about{
+    background: url(../images/bgImg.jpg) no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-blend-mode: Saturation;
+}
+
+.about .details{
+    border-right:.5rem ;
+    /* background: url(./images/bgImg2.jpg) no-repeat rgba(0,0,0,.5); */
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    /*flex is used to assign an area  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 60vh;
+    border-radius: 20px;
+}
+
+.about .details .box{
+        width: 60rem;
+        background-color: var(--light-bg);
+        padding:3rem  2rem;
+        text-align: center;
+        backdrop-filter: blur(.4rem);
+        border-radius: 10px;
+}
+
+.about .details .box h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    columns: var(--white);
+}
+
+.about .details .box p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 2;
+}
+
+.about .details .box .btn{
+    display: inline-block;
+    width: auto;
+    border-radius: 15px;
+}
+
+/* Grid concept */
+.about .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  
+}
+
+.about .grid .box{
+    background-color: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    text-align: center;/* center all the content on row-wise */
+    padding: 2rem;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.about .grid .box img{
+    height: 15rem;
+    /* margin-bottom: 1rem; */
+    transform: scale(1);
+    transition: .2s linear;
+}
+
+.about .review .grid  .box h3{
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.about .grid .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.about .grid .box:hover{
+    background-color: var(--light-black);
+}
+
+.about .grid .box img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Review section CSS */
+
+
+.review{
+    background : url(../images/bgImg3.jpg) no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+/* Grid concept */
+
+.review .grid{
+display: grid;
+grid-template-columns: repeat(auto-fit, 30rem);
+align-items: flex-start;
+justify-content: center;
+gap: 6rem;
+}
+
+.review .grid img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 20rem;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.review .grid .box{
+    /* width: 100rem;  <--Biggest Mistake of the world */
+    background-color: var(--light-bg);
+    padding:3rem  2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+
+.review .grid .box h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    }
+    
+.review .grid .box p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 1.5;
+    }
+    
+.review .grid .box .stars{
+        margin-top: 1rem;
+    }
+    
+.review .grid .box .stars i{
+        font-size: 1.5rem;
+        color: #ff0;
+    }
+    
+.review .grid .box:hover{
+        background-color: var(--black);
+    }
+
+
+/* Mistake done by me */
+    
+    /* 
+
+1. I was using container + review class to change the css properties as both are on the same level. But we cannot us it like .container .review (Since 'review' class is in the same level of 'container' not its child) 
+
+2. My sencond but the biggest mistake was that i was using an extra "width" property(width:100rem) while i was designing the grid box.
+
+*/
+
+
+/* tour section CSS starts */
+
+
+
+.tours{
+    background: url(../images/bgImg2.jpg) no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+}
+
+
+
+
+.tours .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+  
+}
+
+.tours .grid .box{
+    /* width: 100rem;  <--Biggest Mistake of the world */
+    background-color: var(--light-bg);
+    padding:1rem 1rem;
+    text-align: center;
+    backdrop-filter: blur(.2rem);
+    border-radius: 2rem;
+    transition: .2s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+.tours .grid .box .price{
+    position: absolute;
+    top: 1.5rem;left: 1.5rem;
+    border-radius: .5rem;
+    background: var(--light-black);
+    font-size: 1.8rem;
+    padding: .5rem 1.5rem;
+}
+
+.tours .grid .box .price i{
+    top: 1rem;
+    right: 4.7rem;
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.tours .grid .box .price span{
+    columns: var(--white);
+}
+
+
+.tours .grid .box .name{
+    padding: 0rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+
+.tours .grid .box img{
+    
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .2s linear;
+    border-radius: 1rem;
+}
+
+
+
+.tours .grid .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.tours .grid .box:hover{
+    background-color: var(--light-black);
+}
+
+.tours .grid .box .address{
+    font-size: 1.7rem;
+    color: var(--light-white);
+    line-height: 1.5;
+    padding: .5rem 0;
+}
+
+.popup{
+        
+        width: 300px;
+
+        background: #737373;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,50%)scale(0.5);
+        text-align: center;
+        padding: 10px 10px 10px;
+        
+        visibility: hidden;
+        /* display: block; */
+        /* color: #080101; */
+}
+
+.open-popup{
+    visibility: visible;
+    background-size: cover;;
+    /* display: none; */
+    /* width: 600px; */
+    top: 50%;
+    transform: translate(-50%,-84%)scale(1);
+}
+
+.tours .grid .box .popup p{
+    /* color: rgb(238, 29, 29); */
+    color: black;
+}
+
+.tours .grid .box .btn{
+    display: inline-block;
+    width: auto;
+    border-radius: 5px 20px;
+    transition: .2s linear;
+    padding: 0 20px;
+
+}
+
+.tours .grid .box .btnX{
+    display: inline-block;
+    width: auto;
+    border-radius: 30px 30px;
+    transition: .2s linear;
+    padding: 5px;
+    background-color: yellow;
+
+}
+
+.tours .grid .box .btnX:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* tour section CSS ends */
+
+
+/* Contact Page CSS */
+
+.contact{
+    background: url('../images/bgImg3.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row .map{
+    width: 100%;
+    flex: 1 1 40rem;
+    padding: 2 rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2 rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+    
+}
+
+.contact .row form h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.contact .row form .box{
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-black);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-transform: none;
+}
+
+.contact .row form .box::placeholder{
+    color: var(--light-bg);
+    background-color: var(--light-black);
+    padding:10px 5px 10px 0px;
+    width: 100%;
+}
+
+ form > textarea{
+    height: 25rem;
+    resize: none;
+    background-color: rgb(55, 54, 54) !important;
+    color: pink !important;
+    background-color: white;
+
+    /* padding: 5px; */
+    /* margin: 10px; */
+}
+/* .boxCss{
+    height: 25rem;
+    resize: none;
+    background-color: var(--main-color) !important;
+    color: pink !important;
+    background-color: white;
+} */
+
+.contact .grid{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.contact .grid .box{
+    padding: 3rem 2rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+}
+
+.contact .grid .box i{
+    height: 5rem;
+    width: 6rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    background-color: var(--light-black);
+    border-radius: .5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.contact .grid .box .h3{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.contact .grid .box a{
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color:var(--light-white);
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.contact .grid .box a:hover{
+    color:var(--white);
+    text-decoration: underline;
+}
+
+.contact .credit{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--light-white);
+}
+
+.contact .credit span{
+    color: var(--main-color);
+}
+
+/* contact page end */
+
+
+/* Footer section start */
+
+.footer {
+    background-color: var(--light-bg);
+    color: #fff;
+    padding: 50px 0;
+    backdrop-filter: blur(.4);
+  }
+  
+  .footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .footer-photo {
+    /* display: block; */
+    width: 150px;
+    flex: 1;
+    margin-right: 100px;
+    
+    position: relative;
+    bottom: 35px;
+    left:2px;
+    right: 50px;
+  }
+  
+  .footer-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer-section {
+    flex: 2;
+
+  }
+  
+  .footer-section h4 {
+    font-size: 2em;
+    margin-bottom: 20px;   
+    
+}
+
+.footer-section p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-right: 150px;
+
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    
+
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    background-color: #34495e;
+    padding: 20px 0;
+  }
+    
+
+/* Footer section ends */
+
+
+
+
+/* media queries */
+
+/* max media query */
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+/* medium-size media query */
+@media(max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .flex{
+        position: relative;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top:100%;left: 2rem;right: 2rem;
+        background-color: var(--light-black);
+        backdrop-filter: blur(.4rem);/*It is use to blur the background*/
+        border-radius: .5rem;
+        
+        /* Hamburger css property --must needed */
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    
+    .header .flex .navbar.active{
+        transform: scale(1);
+        transition: .3s linear;
+    }
+
+
+    .header .flex .navbar a{
+        display: block;
+        padding: 1.5rem .5rem;
+        margin: .5rem .5rem;
+        columns: var(--white);
+        border-radius: .5rem;
+       
+    }
+
+    .header .flex .navbar a:hover{
+        background-color: var(--light-bg);
+    }
+}
+
+/* min media query */
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Error code */
+
+
+
+
+
+
+
+
